@@ -36,7 +36,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Usern
 #from bot.helper_funcs.utils import(
 #  delete_downloads
 #)
-os.system("wget https://telegra.ph/file/d2301e3bb9c64a527927f.jpg -O thumb.jpg")
+os.system("wget https://telegra.ph//file/a235f7128d526b55a71e0.jpg -O thumb.jpg")
 
 #LOGS_CHANNEL = -1001283278354
 CURRENT_PROCESSES = {}
@@ -87,7 +87,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('SOURCE CODE 🤤', url='https://t.me/TheBatmanShan')
+                    InlineKeyboardButton('SOURCE CODE 🤤', url='https://t.me/NINJA_NARUTO_SAI_2')
                 ]
             ]
         ),
