@@ -6,26 +6,26 @@ from bot.get_cfg import get_config
 
 
 class Localisation:
-    START_TEXT = "Hello, \n\nThis is a Telegram <b>Video Encoder Bot</b>. \n\n<b>Please send me any Telegram big video file I will compress it as s small video file!</b> \n\n/help for more details. \n\nOwner : @NINJA_NARUTO_SAI_2"
+    START_TEXT = "Hello, \n\nThis is a Telegram <b>Video Encoder Bot</b>. \n\n<b>Please send me any Telegram big video file I will compress it as s small video file!</b> \n\n/help for more details. \n\nOwner : @Sensei_Rimuru"
    
     ABS_TEXT = " Please don't be selfish."
     
     FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
     
     
-    DOWNLOAD_START = "📥 Downloading ... 📥 \n"
+    DOWNLOAD_START = "⚡ Dᴏᴡɴʟᴏᴀᴅɪɴɢ ...\n"
     
-    UPLOAD_START = "📤 Uploading ... 📤 \n"
+    UPLOAD_START = "⚡ Uᴘʟᴘᴀᴅɪɴɢ ...\n"
     
-    COMPRESS_START = "📀 Trying to encode ... 📀"
+    COMPRESS_START = "⚡ Tʀʏɪɴɢ ᴛᴏ ᴇɴᴄᴏᴅᴇ ..."
     
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
     
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations."
     
-    COMPRESS_SUCCESS = "☆ @NINJA_NARUTO_SAI_2"
+    COMPRESS_SUCCESS = "ᴇɴᴄᴏᴅᴇᴅ ʙʏ [@ᴀɴɪᴍᴇ_sᴇɴsᴇɪ_ɴᴇᴛᴡᴏʀᴋ]"
 
-    COMPRESS_PROGRESS = "⏳ ETA: {}\n🚀 Progress: {}%"
+    COMPRESS_PROGRESS = "🕛 ETA: {}\n♻️ Progress: {}%"
 
     SAVED_CUSTOM_THUMB_NAIL = "Custom video / file thumbnail saved. This image will be used in the video / file."
     
