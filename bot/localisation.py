@@ -15,7 +15,7 @@ class Localisation:
     
     DOWNLOAD_START = "⚡ Dᴏᴡɴʟᴏᴀᴅɪɴɢ ...\n"
     
-    UPLOAD_START = "⚡ Uᴘʟᴘᴀᴅɪɴɢ ...\n"
+    UPLOAD_START = "⚡ Uᴘʟᴏᴀᴅɪɴɢ ...\n"
     
     COMPRESS_START = "⚡ Tʀʏɪɴɢ ᴛᴏ ᴇɴᴄᴏᴅᴇ ..."
     
