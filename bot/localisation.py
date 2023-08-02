@@ -13,17 +13,17 @@ class Localisation:
     FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
     
     
-    DOWNLOAD_START = "⚡ Dᴏᴡɴʟᴏᴀᴅɪɴɢ ...\n"
+    DOWNLOAD_START = "⚡ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ...\n"
     
-    UPLOAD_START = "⚡ Uᴘʟᴏᴀᴅɪɴɢ ...\n"
+    UPLOAD_START = "⚡ ᴜᴘʟᴏᴀᴅɪɴɢ ...\n"
     
-    COMPRESS_START = "⚡ Tʀʏɪɴɢ ᴛᴏ ᴇɴᴄᴏᴅᴇ ..."
+    COMPRESS_START = "⚡ ᴛʀʏɪɴɢ ᴛᴏ ᴇɴᴄᴏᴅᴇ ..."
     
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
     
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations."
     
-    COMPRESS_SUCCESS = "ᴇɴᴄᴏᴅᴇᴅ ʙʏ [@ᴀɴɪᴍᴇ_sᴇɴsᴇɪ_ɴᴇᴛᴡᴏʀᴋ]"
+    COMPRESS_SUCCESS = "ᴇɴᴄᴏᴅᴇᴅ ʙʏ [@Anime_Sensei_Network]"
 
     COMPRESS_PROGRESS = "🕛 ETA: {}\n♻️ Progress: {}%"
 
