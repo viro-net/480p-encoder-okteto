@@ -49,7 +49,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     preset.append("veryfast")
     audio_b.append("40k")
     watermark.append('-vf "drawtext=fontfile=font.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=@Anime_Sensei_Network"')
-    file_genertor_command = f'ffmpeg -preset veryfast -c:v {codec[0]} -s 854x480 -{codec[0]}-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title={filename} [@Anime_Sensei_Network]' -metadata:s:v title="[@Anime_Sensei_Network]" -metadata:s:a title="[@Anime_Sensei_Network]" -metadata:s:s title="[@Anime_Sensei_Network]" -pix_fmt yuv420p -crf {crf[0]} -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1" #Done !!
+    file_genertor_command = f'ffmpeg -preset veryfast -c:v {codec[0]} -s 854x480 -{codec[0]}-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By [@Anime_Sensei_Network]' -metadata:s:v title="[@Anime_Sensei_Network]" -metadata:s:a title="[@Anime_Sensei_Network]" -metadata:s:s title="[@Anime_Sensei_Network]" -pix_fmt yuv420p -crf {crf[0]} -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1" #Done !!
     COMPRESSION_START_TIME = time.time()
     process = await asyncio.create_subprocess_shell(
           file_genertor_command,
