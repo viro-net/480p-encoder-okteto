@@ -3,7 +3,7 @@ logging.basicConfig(
     level=logging.DEBUG, 
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
-LOGGER = logging.getLogger(name)
+LOGGER = logging.getLogger(_name_)
 
 import asyncio
 import os
@@ -39,7 +39,10 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     progress = output_directory + "/" + "progress.txt"
     with open(progress, 'w') as f:
       pass
-    metadata.append('-metadata title="Anime Sensei [Join t.me/Anime_Sensei_Network]"')
+    ##  -metadata title='Anime Sensei [Join t.me/Anime_Sensei_Network]' -vf drawtext=fontfile=Italic.ttf:fontsize=20:fontcolor=black:x=15:y=15:text='Anime Sensei'
+    ##"-metadata", "title=@Anime_Sensei_Network", "-vf", "drawtext=fontfile=njnaruto.ttf:fontsize=20:fontcolor=black:x=15:y=15:text=" "Anime Sensei",
+     ## -vf eq=gamma=1.4:saturation=1.4
+     ## lol 😂
     crf.append("28")
     codec.append("libx264")
     resolution.append("854x480")
