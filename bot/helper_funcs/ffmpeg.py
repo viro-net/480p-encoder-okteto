@@ -39,7 +39,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     progress = output_directory + "/" + "progress.txt"
     with open(progress, 'w') as f:
       pass
-    def 
+    
     metadata.append('-metadata', f'title={metadata}', '-metadata:s:v', f'title={metadata}', '-metadata:s:a', f'title={metadata}',
                  '-metadata:s:s', f'title={metadata}', '-x265-params', 'no-info=1', '-bsf:v', 'filter_units=remove_types=6'))
     crf.append("28")
