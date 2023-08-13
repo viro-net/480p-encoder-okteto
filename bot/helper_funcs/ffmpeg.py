@@ -27,6 +27,7 @@ from bot import (
     preset,
     codec,
     watermark,
+    set_metadata,
     pid_list
 )
 
@@ -39,10 +40,9 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     progress = output_directory + "/" + "progress.txt"
     with open(progress, 'w') as f:
       pass
-    ##  -metadata title='Anime Sensei [Join t.me/Anime_Sensei_Network]' -vf drawtext=fontfile=Italic.ttf:fontsize=20:fontcolor=black:x=15:y=15:text='Anime Sensei'
-    ##"-metadata", "title=@Anime_Sensei_Network", "-vf", "drawtext=fontfile=njnaruto.ttf:fontsize=20:fontcolor=black:x=15:y=15:text=" "Anime Sensei",
-     ## -vf eq=gamma=1.4:saturation=1.4
-     ## lol 😂
+    def set_metadata(cmds: List, metadata: str):
+    cmds.extend(('-metadata', f'title={metadata}', '-metadata:s:v', f'title={metadata}', '-metadata:s:a', f'title={metadata}',
+                 '-metadata:s:s', f'title={metadata}', '-x265-params', 'no-info=1', '-bsf:v', 'filter_units=remove_types=6'))
     crf.append("28")
     codec.append("libx264")
     resolution.append("854x480")
