@@ -18,7 +18,9 @@ from bot import (
     audio_b,
     preset,
     codec,
-    watermark 
+    watermark
+    set_metadata
+
 )
 from bot.helper_funcs.utils import add_task, on_task_complete
 from pyrogram import Client, filters
@@ -45,6 +47,7 @@ codec.append("libx264")
 resolution.append("854x480")
 preset.append("veryfast")
 audio_b.append("40k")
+set_metadata.append("@Anime_Sensei_Network")
 # 🤣
 
 
@@ -185,6 +188,11 @@ if __name__ == "__main__" :
         os.system('rm thumb.jpg')
         await message.download(file_name='/app/thumb.jpg')
         await message.reply_text('Thumbnail Added')
+        
+     @app.on_message(filters.incoming & filters.command(["set_metadata", f"set_metadat@{BOT_USERNAME}"]))
+     async def help_message(app,message)
+       if message from_user.id in AUTH_USERS:
+           return await message.reply_text(metadata updated successfully ✅)
         
     @app.on_message(filters.incoming & filters.command(["cancel", f"cancel@{BOT_USERNAME}"]))
     async def help_message(app, message):
