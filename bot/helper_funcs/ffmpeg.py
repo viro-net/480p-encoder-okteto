@@ -40,8 +40,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     with open(progress, 'w') as f:
       pass
     
-    metadata.append('-metadata', f'title={metadata}', '-metadata:s:v', f'title={metadata}', '-metadata:s:a', f'title={metadata}',
-                 '-metadata:s:s', f'title={metadata}', '-x265-params', 'no-info=1', '-bsf:v', 'filter_units=remove_types=6'))
+    metadata.append("-metadata', f'title={metadata}', '-metadata:s:v', f'title={metadata}', '-metadata:s:a', f'title={metadata}"))
     crf.append("28")
     codec.append("libx264")
     resolution.append("854x480")
