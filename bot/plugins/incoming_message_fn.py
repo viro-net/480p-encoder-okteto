@@ -349,7 +349,7 @@ async def incoming_compress_message_f(update):
         caption=caption,
         force_document=True,
         #duration=duration,
-        thumb="thumb.jpg",
+        thumb="https://i.postimg.cc/Pq3VdWys/20230906-083159.jpg",
         reply_to_message_id=update.message_id,
         progress=progress_for_pyrogram,
         progress_args=(
