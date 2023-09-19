@@ -349,7 +349,7 @@ async def incoming_compress_message_f(update):
         caption=caption,
         force_document=True,
         #duration=duration,
-        thumb="https://i.postimg.cc/Pq3VdWys/20230906-083159.jpg",
+        thumb="https://telegra.ph/file/4f9543c14158ff2dfaf62.jpg",
         reply_to_message_id=update.message_id,
         progress=progress_for_pyrogram,
         progress_args=(
