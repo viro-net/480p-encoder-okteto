@@ -1,4 +1,5 @@
 import datetime
+import anitopy
 import logging
 logging.basicConfig(
     level=logging.DEBUG,
@@ -36,7 +37,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Usern
 #from bot.helper_funcs.utils import(
 #  delete_downloads
 #)
-os.system("wget https://telegra.ph/file/8506b298c179b4551326e.jpg -O thumb.jpg")
+os.system("wget https://telegra.ph/file/eb6b1f4fe1e5e4a013534.jpg -O thumb.jpg")
 
 #LOGS_CHANNEL = -1001283278354
 CURRENT_PROCESSES = {}
@@ -59,7 +60,7 @@ async def incoming_start_message_f(bot, update):
       #          )
       #         return
       #    except:
-      #          pass in
+      #          pass
       #  except UserNotParticipant:
        #     await bot.send_message(
        #         chat_id=update.chat.id,
@@ -87,7 +88,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Channel', url='https://t.me/Anime_Compass')
+                    InlineKeyboardButton('SOURCE CODE 🤤', url='https://t.me/TheBatmanShan')
                 ]
             ]
         ),
@@ -224,6 +225,11 @@ async def incoming_compress_message_f(update):
         )
       )
       saved_file_path = video
+      anitopy_options = {'allowed_delimiters': ' '}
+      new_name = anitopy.parse(nam)
+      anime_name = new_name['anime_title']
+      episode_no = new_name['episode_number']  
+      joined_string = f"[{anime_name}] [Episode {episode_no}] [@Anime_Compass!🧭.mkv]"
       LOGGER.info(saved_file_path)  
       LOGGER.info(video)
       if( video is None ):
