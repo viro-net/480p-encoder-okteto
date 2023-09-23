@@ -16,6 +16,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from bot.helper_funcs.display_progress import (
   TimeFormatter
 )
+from bot import ffmpeg
 from bot import (
     FINISHED_PROGRESS_STR,
     UN_FINISHED_PROGRESS_STR,
