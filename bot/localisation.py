@@ -1,34 +1,5 @@
-import logging
-logging.basicConfig(
-    level=logging.DEBUG, 
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
-LOGGER = logging.getLogger(__name__)
 
-import asyncio
-import os
-import time
-import re
-import json
-import subprocess
-import math
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from bot.helper_funcs.display_progress import (
-  TimeFormatter
-)
-from bot.helper_funcs.ffmpeg import ffmpeg
-from bot import (
-    FINISHED_PROGRESS_STR,
-    UN_FINISHED_PROGRESS_STR,
-    DOWNLOAD_LOCATION,
-    crf,
-    resolution,
-    audio_b,
-    preset,
-    codec,
-    watermark,
-    pid_list
-)
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # (c) @AbirHasan2005
@@ -65,8 +36,6 @@ class Localisation:
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
     
     SAVED_RECVD_DOC_FILE = "✅ Downloaded Successfully."
-    
-    CUSTOM_CAPTION_UL_FILE = " "
     
     NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom ThumbNail found."
     
