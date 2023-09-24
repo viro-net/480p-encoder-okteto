@@ -21,7 +21,9 @@ from bot import (
 from bot.helper_funcs.ffmpeg import (
   convert_video,
   media_info,
-  take_screen_shot
+  take_screen_shot,
+  out_put_file_name
+
 )
 from bot.helper_funcs.display_progress import (
   progress_for_pyrogram,
@@ -343,7 +345,7 @@ async def incoming_compress_message_f(update):
         text=Localisation.UPLOAD_START,                    
       )
       u_start = time.time()
-      caption = Helper_funcs.ffmpeg.out_put_file_name ,
+      caption = out_put_file_name ,
       upload = await bot.send_document(
         chat_id=update.chat.id,
         document=o,
