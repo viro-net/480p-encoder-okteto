@@ -21,8 +21,7 @@ from bot import (
 from bot.helper_funcs.ffmpeg import (
   convert_video,
   media_info,
-  take_screen_shot,
-  video_file
+  take_screen_shot
 
 )
 from bot.helper_funcs.display_progress import (
