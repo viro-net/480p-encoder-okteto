@@ -225,20 +225,7 @@ async def incoming_compress_message_f(update):
           d_start
         )
       )
-      saved_file_path = video
-      eni = saved_file_path.split("/")[-1]		
-      xnx = eni.split(".")[-1]		
-      opm = eni.replace(f".{xnx}", " .mkv")		
-      nam = opm.replace("_", " ")		
-      nam = opm.replace(".", " ")		
-      anitopy_options = {'allowed_delimiters': ' '}		
-      new_name = anitopy.parse(nam)		
-      anime_name = new_name['anime_title']		
-      episode_no = new_name['episode_number']  		
-      joined_string = f"[{anime_name}] [Episode {episode_no}] [@Anime_Compass!🧭.mkv]"		
-      if 'anime_season' in new_name.keys():		
-        animes_season = new_name['anime_season']		
-        joined_string = f"[{anime_name}] [Season {animes_season}] [Episode {episode_no}] [@Anime_Compass!🧭.mkv]"	
+      saved_file_path = video			
       LOGGER.info(saved_file_path)  
       LOGGER.info(video)
       if( video is None ):
@@ -361,7 +348,7 @@ async def incoming_compress_message_f(update):
       upload = await bot.send_document(
         chat_id=update.chat.id,
         document=o,
-        caption=joined_string,
+        caption=caption,
         force_document=True,
         #duration=duration,
         thumb="thumb.jpg",
