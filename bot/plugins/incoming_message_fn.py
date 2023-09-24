@@ -22,7 +22,7 @@ from bot.helper_funcs.ffmpeg import (
   convert_video,
   media_info,
   take_screen_shot,
-  out_put_file_name
+  video_file
 
 )
 from bot.helper_funcs.display_progress import (
