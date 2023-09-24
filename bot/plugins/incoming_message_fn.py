@@ -343,7 +343,7 @@ async def incoming_compress_message_f(update):
         text=Localisation.UPLOAD_START,                    
       )
       u_start = time.time()
-      caption = video_file + " [@Anime_Compass] + ".mkv" ,
+      caption = video_file + "[@Anime_Compass]" + ".mkv" ,
       upload = await bot.send_document(
         chat_id=update.chat.id,
         document=o,
