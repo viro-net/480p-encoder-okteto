@@ -357,11 +357,11 @@ async def incoming_compress_message_f(update):
         text=Localisation.UPLOAD_START,                    
       )
       u_start = time.time()
-      caption = out_put_file_name ,
+      caption = Localisation.COMPRESS_SUCCESS.replace('{}', downloaded_time, 1).replace('{}', compressed_time, 1)
       upload = await bot.send_document(
         chat_id=update.chat.id,
         document=o,
-        caption=caption,
+        caption=joined_string,
         force_document=True,
         #duration=duration,
         thumb="thumb.jpg",
