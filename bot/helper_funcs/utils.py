@@ -1,5 +1,6 @@
 
 # the logging things
+import ffmpeg
 import logging
 logging.basicConfig(
     level=logging.DEBUG,
