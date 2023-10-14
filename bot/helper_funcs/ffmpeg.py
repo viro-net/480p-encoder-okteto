@@ -45,7 +45,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
      ## lol 😂
     crf.append("28")
     codec.append("libx265")
-    resolution.append("720x660")
+    resolution.append("900x750")
     preset.append("veryfast")
     audio_b.append("64k")
     watermark.append('-vf "drawtext=fontfile=font.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text=Anime Compass"')
