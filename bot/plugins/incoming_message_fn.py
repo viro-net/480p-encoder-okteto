@@ -89,7 +89,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Channel', url='https://t.me/Anime_Compass')
+                    InlineKeyboardButton('Channel', url='https://t.me/Anime_DownLord')
                 ]
             ]
         ),
